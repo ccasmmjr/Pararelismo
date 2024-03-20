@@ -35,6 +35,7 @@ public class Primo {
                 for(i=2;i<num;i++){
                     if(num % i == 0) {
                         priminho = false;
+                        break;
                     }
                 }
                 if(priminho){
