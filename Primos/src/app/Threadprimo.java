@@ -7,9 +7,7 @@ import java.util.Scanner;
 import pacote.Primo;
 public class Threadprimo {
     public static void main(String[] args)  {
-    
         Scanner scan = new Scanner(System.in);
-        Primo primo = new Primo("C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Entrada01.txt");
       //escreva o diretorio do arquivo como ta no exemplo
         int num_thread=0;
         int escolha=0;
@@ -32,7 +30,7 @@ public class Threadprimo {
                 break;
                 default :                
             }
-        
+            Primo primo = new Primo("C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Entrada02.txt",num_thread);
         if(conf==1){
             System.out.println("A seguir exibira os numeros primos \n");
 
