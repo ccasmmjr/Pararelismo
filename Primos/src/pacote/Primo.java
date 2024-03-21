@@ -82,12 +82,11 @@ try{
                     }
                   }
                 synchronized(this){
-                // if(priminho){
-                        System.out.println(id); 
+                 if(priminho){
                         System.out.println(linha);  
                         Resp.write(linha+"\n");
                           
-                 //}
+                 }
                  if(ordem!=qtd_thread-1){
                     ordem++;
                     }else{
