@@ -30,18 +30,29 @@ public class Threadprimo {
                 break;
                 default :                
             }
-            Primo primo = new Primo("C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Entrada02.txt",num_thread);
+            Primo primo = new Primo("C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Entrada01.txt");
+          
         if(conf==1){
             System.out.println("A seguir exibira os numeros primos \n");
-
+            primo.lerarquivo();
+            Thread threads[]= new Thread[num_thread];
             for (int i = 0;i< num_thread;i++){
             
-                Thread thread = new Thread(
-                    () -> primo.verificar(),"thread-"+i
-                );
-                thread.start();
+                threads[i]= new Thread(() -> primo.verificar(),"thread-"+i);
+                threads[i].start();
+                 
             }
+            for (Thread thread : threads) {
+                try {
+                    thread.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            primo.escrearquivo();
+            
         }
-        
+      
     }
 }
