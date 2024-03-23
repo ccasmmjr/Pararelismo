@@ -23,11 +23,11 @@ public class Primo {
     try{
         try{
             //coloque o diretororio onde deseja que os resultados aparecam
-        File file = new File( "C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Resultado.txt" ); 
+        File file = new File( "C:/Users/ccasmmjr/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Resultado.txt" ); 
         file.delete();
         arq = new FileReader(arquivo);
         lerarq = new BufferedReader(arq);
-        Resp = new FileWriter("C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Resultado.txt",true);
+        Resp = new FileWriter("C:/Users/ccasmmjr/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Resultado.txt",true);
         }
         catch(FileNotFoundException e){
             e.printStackTrace();
@@ -82,9 +82,12 @@ public class Primo {
                         if(num <= 1){
                             priminho = false;
                         }
+                        if(num == 2){
+                            priminho = true;
+                        }
                         if(priminho){
     
-                            for(i=2;i<Math.sqrt(num);i++){
+                            for(i=2;i*i<=num;i++){
                                 
                                 if(num % i == 0) {
                                     priminho = false;
@@ -95,7 +98,8 @@ public class Primo {
                         }
                          if(priminho){
                                 Esclista.add(String.valueOf(num));
-                                System.out.println(num);  
+                                System.out.println(Thread.currentThread().getName()
+                                +" "+num);  
                          }
                          cont_Lista_tam++;
                     }

@@ -30,7 +30,7 @@ public class Threadprimo {
                 break;
                 default :                
             }
-            Primo primo = new Primo("C:/Users/user-name/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Entrada01.txt");
+            Primo primo = new Primo("C:/Users/ccasmmjr/Desktop/AtvSistemaDistribuido/Pararelismo/Primos/Entrada01.txt");
           
         if(conf==1){
             System.out.println("A seguir exibira os numeros primos \n");
