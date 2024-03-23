@@ -18,8 +18,9 @@ public class Primo {
     private ArrayList<String> Lerlista = new ArrayList();
     private ArrayList<String> Esclista = new ArrayList();
     private int cont_Lista_tam = 0 ;
-    public Primo(String arquivo){
-         
+    private long inicio=0;
+    public Primo(String arquivo, long inicio){
+         this.inicio=inicio;
     try{
         try{
             //coloque o diretororio onde deseja que os resultados aparecam
@@ -97,9 +98,13 @@ public class Primo {
                             }
                         }
                          if(priminho){
-                                Esclista.add(String.valueOf(num));
+                            long fim = System.nanoTime();
+                            double  time= (fim-inicio)/1000;
+                            //microsegundos
+                            String resultados=String.valueOf(num)+" "+String.valueOf(time);
+                                Esclista.add(String.valueOf(resultados));
                                 System.out.println(Thread.currentThread().getName()
-                                +" "+num);  
+                                +" "+resultados);  
                          }
                          cont_Lista_tam++;
                     }
