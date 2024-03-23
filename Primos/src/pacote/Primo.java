@@ -101,7 +101,7 @@ public class Primo {
                             long fim = System.nanoTime();
                             double  time= (fim-inicio)/1000;
                             //microsegundos
-                            String resultados=String.valueOf(num)+" "+String.valueOf(time);
+                            String resultados=String.valueOf(num)+","+String.valueOf(time);
                                 Esclista.add(String.valueOf(resultados));
                                 System.out.println(Thread.currentThread().getName()
                                 +" "+resultados);  
