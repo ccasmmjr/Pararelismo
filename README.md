@@ -25,21 +25,21 @@ Esta classe é responsável por ler o arquivo de entrada, contendo números a se
 # Como utilizar
 
 1. 
-    ```
+    
     Dentro da classe "Treadprimo" no pacote "app", deve-se localizar a linha de comando abaixo e substituir o endereço ".txt" do arquivo de entrada onde está o conjunto de teste pelo endereço que sua maquina está utilizando:
-    ```
+    
     ![Local para inserir o diretório do arquivo de entrada](https://github.com/ccasmmjr/Pararelismo/blob/main/Diretorio%20Entrada.jpeg)
 
 2. 
-    ```
+    
     Dentro da classe "Primo" no pacote "pacote", deve-se se identificar as linhas de comando abaixo e substituir os endereços ".txt" para aonde se deve gravar os resultados da analise:
-    ```
+    
     ![Local para inserir o diretório do arquivo de saída.](https://github.com/ccasmmjr/Pararelismo/blob/main/Diretorio%20saida.jpeg)
 
 3. 
-    ```
+    
     O arquivo txt deve ter um formato semelhante, exemplo abaixo, ao "Entrada01":
-    ```
+    
     ![Exemplo de Entrada aceitável](<Exemplo de Entrada aceitável.png>)
 
 
@@ -55,18 +55,18 @@ Esses resultados indicam que a utilização de múltiplas threads para processam
 Essa discrepância pode ser atribuída a diversas características das threads, destacando-se os seguintes fatores:
 
 1. Concorrência:
-    ```
+    
     Devido à intensidade do uso da CPU pelo processo, reduzir o número total de threads permite que o processador distribua mais eficientemente a carga de trabalho entre seus núcleos, evitando a criação de gargalos de processamento.
-    ```
+    
 
 2. Overhead:
-    ```
+    
     A criação e o gerenciamento de threads possuem um custo de overhead. Um grande número de threads em execução simultânea pode resultar em uma troca constante de contexto e sobrecarga de gerenciamento, afetando negativamente o desempenho.
-    ```
+    
 3. Escalabilidade:
-    ```
+    
     Embora teoricamente um aumento linear no número de threads deva resultar em um aumento proporcional na velocidade de processamento final, as limitações de software e hardware podem impedir esse cenário ideal. Portanto, é essencial encontrar um equilíbrio entre o número de threads e o overhead para garantir o processamento mais rápido possível.
-    ```
+    
 
 Essas considerações destacam a importância de uma análise cuidadosa e otimização do número de threads em cenários de processamento paralelo, visando maximizar a eficiência e o desempenho do sistema.
 
