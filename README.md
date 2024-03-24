@@ -9,4 +9,6 @@ O código foi dividido em dois pacotes: o pacote "app", que contém a classe pri
 
 # Como utilizar
 
-# Pararelismo
+# Diferenca entre a utilização de 1, 5 e 10 threads
+
+# Conclusão
