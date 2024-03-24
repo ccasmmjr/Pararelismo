@@ -8,7 +8,12 @@ O código foi dividido em dois pacotes: o pacote "app", que contém a classe pri
 ## Primo.java
 
 # Como utilizar
+Localizado na Threadprimo.java aqui coloca o caminho que está localizado seu txt de entrada.
 
+![Local para inserir o diretório do arquivo de entrada](https://github.com/ccasmmjr/Pararelismo/blob/main/Grafico.jpeg)
+
+Localizado na Primo.java aqui coloca o caminho que está localizado seu txt de saida.
+![Local para inserir o diretório do arquivo de saída.](https://github.com/ccasmmjr/Pararelismo/blob/main/Diretorio%20saida.jpeg)
 # Diferenca entre a utilização de 1, 5 e 10 threads
 ![Gráfico de comparação](https://github.com/ccasmmjr/Pararelismo/blob/main/Grafico.jpeg)
 
