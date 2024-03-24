@@ -10,5 +10,6 @@ O código foi dividido em dois pacotes: o pacote "app", que contém a classe pri
 # Como utilizar
 
 # Diferenca entre a utilização de 1, 5 e 10 threads
+![Gráfico de comparação](https://github.com/ccasmmjr/Pararelismo/blob/main/Grafico.jpeg)
 
 # Conclusão
