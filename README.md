@@ -16,7 +16,7 @@ Esta classe é a classe principal do projeto. Ela controla a execução do progr
 
 ## Primo.java
 
-Esta classe é responsável por ler o arquivo de entrada, contendo números a serem verificados e identicar quais são números primos. E aqui onde é implementado a lógica para à verificação de números primos e também utiliza sincronização para garantir execução correta em múltiplas threads.
+Esta classe lida com a verificação de números primos a partir de um arquivo de entrada. Ela implementa a lógica de verificação de primos e sincronizações para garantir execução correta em múltiplas threads. Além disso, é responsável pela leitura do arquivo de entrada e geração do arquivo de resultado correspondente.
 
 # Requisitos
 
